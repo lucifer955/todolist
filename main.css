@@ -1,0 +1,86 @@
+body{
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: aliceblue;
+
+    
+}
+
+header h1{
+    font-size: 50px;
+    font-family: 'Mansalva', cursive;
+}
+
+header h1 span{
+    font-size: 70px;
+    font-family: 'Mansalva', cursive;
+    color: rgb(21, 162, 197);
+    
+}
+
+/* header h1:hover{
+    color: rgb(21, 162, 197);
+} */
+
+header h1 span:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+
+.container{
+    max-width: 500px;
+}
+
+.addTodo{
+    color: #16222A;
+    opacity: 0.7;
+    font-family: 'Mansalva', cursive;
+    font-family: 'Inconsolata', monospace;
+    
+}
+
+.addTodo:hover{
+    opacity: 1;
+}
+
+
+.todos li{
+    background: #3A6073;
+    font-family: 'Mansalva', cursive;
+    font-family: 'Inconsolata', monospace;
+}
+
+
+.todos li:hover{
+    background: rgb(21, 162, 197);
+}
+
+.delete{
+    cursor: pointer;
+}
+.delete:hover{
+    color: rgb(218, 66, 55);
+    cursor: pointer;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+    
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
+  }
