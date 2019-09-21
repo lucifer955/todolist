@@ -39,3 +39,10 @@ addToList.addEventListener('click', e=>{
     }
 });
 
+//mark completed todos
+addToList.addEventListener('click', e=>{
+
+    if(e.target.classList.contains('task')){
+        e.target.parentElement.classList.toggle('completed');
+    }
+});
