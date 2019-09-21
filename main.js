@@ -7,7 +7,7 @@ const addToList = document.querySelector('.todos');
 const generateTemplate = newTodo => {
     const html = `
     <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span>${newTodo}</span>
+                <span class="task">${newTodo}</span>
                 <i class="fa fa-trash delete"></i>
     </li>
     `;
